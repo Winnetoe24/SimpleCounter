@@ -1,0 +1,82 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "SimpleCounter",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "startDragging": true
+      },
+      "process": {
+        "exit": true
+      }
+    },
+    
+    "bundle": {
+      "active": true,
+      "category": "Utility",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "de.alex-brand.simplecounter",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "A Simple Counter",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 100,
+        "resizable": false,
+        "title": "SimpleCounter",
+        "decorations": false,
+        "focus":true,
+        "alwaysOnTop":true,
+        "x":1000,
+        "y":100,
+        "width": 150
+      }
+    ]
+  }
+}
